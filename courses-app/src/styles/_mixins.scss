@@ -1,0 +1,6 @@
+// @import './variables';
+
+@mixin font-family($font, $font-size) {
+	font-family: $font;
+	font-size: $font-size;
+}

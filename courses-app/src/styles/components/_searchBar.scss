@@ -1,0 +1,11 @@
+.search {
+	width: 100%;
+	&__container {
+		display: flex;
+		gap: 20px;
+
+		&_input {
+			width: 400px;
+		}
+	}
+}

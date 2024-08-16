@@ -1,0 +1,32 @@
+@import '../variables';
+@import '../mixins';
+
+.header {
+	width: 100%;
+	height: 80px;
+	box-shadow: 1px 1px 4px 0px $box-shadow;
+	background-color: $background;
+	&__container {
+		width: 90%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		&_logo {
+			width: 110px;
+			height: 48px;
+		}
+		&_info {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
+		&_name {
+			color: $text-color;
+			@include font-family($font, $font-size14);
+			line-height: 20px;
+		}
+	}
+}

@@ -1,0 +1,190 @@
+.create {
+	width: 100%;
+	height: 100%;
+
+	&__container {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 70px;
+		margin: 0 auto;
+
+		&_main {
+			display: flex;
+			flex-direction: column;
+			padding-top: 30px;
+			padding-left: 80px;
+			width: 1104px;
+			height: 1105px;
+			border: 1px solid $line;
+			background-color: $background;
+		}
+
+		&_first,
+		&_description {
+			width: 944px;
+		}
+
+		&_title {
+			@include font-family($font, $font-size32);
+			line-height: 40px;
+			color: $title-color;
+		}
+
+		&_subtitle {
+			@include font-family($font, $font-size24);
+			line-height: 32px;
+			color: $title-color;
+		}
+
+		&_authors {
+			width: 90%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&_author {
+			width: 90%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&_list {
+			display: flex;
+			flex-direction: column;
+			margin-left: 800px;
+			margin-top: -70px;
+		}
+
+		&_single {
+			margin-top: 20px;
+		}
+
+		&_input {
+			margin-top: -20px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&_buttons {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			button {
+				margin-top: -20px;
+			}
+		}
+
+		&_new {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 10px;
+		}
+
+		&_add {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-top: -50px;
+		}
+		&_lists {
+			margin-top: 0px;
+		}
+
+		&_button {
+			margin-top: -43px;
+			width: 185px;
+		}
+
+		&_mid {
+			width: 400px;
+		}
+
+		&_block {
+			display: flex;
+			width: 90%;
+		}
+	}
+
+	&__duration_container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__duration_display {
+		margin-left: 10px;
+		font-size: 16px;
+		color: $title-color;
+	}
+}
+
+.wide-input {
+	width: 1000px;
+}
+.big-input {
+	height: 152px;
+	width: 1000px;
+	position: relative;
+
+	input {
+		text-align: left;
+	}
+
+	&::placeholder {
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: calc(100% - 20px);
+		padding-left: 0;
+	}
+}
+
+.mid-input {
+	width: 400px;
+}
+
+.icon-add {
+	outline: none;
+	width: 13px;
+	height: 13px;
+	background: url('../../assets/img/add.svg') no-repeat;
+	border: none;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-delete {
+	outline: none;
+	width: 13px;
+	height: 13px;
+	background: url('../../assets/img/delete.svg') no-repeat;
+	border: none;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.author-item {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.create__container_mid {
+	width: 400px;
+}
+
+.form-buttons {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	padding-top: 50px;
+	margin-right: -35px;
+}

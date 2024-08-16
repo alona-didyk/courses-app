@@ -1,0 +1,27 @@
+.regist {
+	width: 100%;
+	height: 100%;
+
+	&__container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 70px;
+		margin: 0 auto;
+
+		&_main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 40px;
+			width: 585px;
+			height: 558px;
+			border: 1px solid $line;
+			border-radius: 4px;
+			background-color: $button-text;
+		}
+	}
+}
